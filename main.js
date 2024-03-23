@@ -18,6 +18,7 @@ const answer = await inquirer.prompt([
     },
     { message: "Enter 2nd Num", type: "number", name: "secNum" },
 ]);
+console.log("Your answer is:");
 // Conditional Statements:
 if (answer.operator === "Addition") {
     console.log(answer.firstNum + answer.secNum);
@@ -40,3 +41,4 @@ else if (answer.operator === "Modulus") {
 else {
     console.log("Please select valid operator!!!");
 }
+console.log("Thank you for using this calculator!!!");
